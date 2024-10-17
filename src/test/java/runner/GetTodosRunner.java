@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/java/feature/getTodos.feature",
         glue = {"stepDefinitions"},
-        plugin = {"pretty" , "html:target/cucumber-reports/report.html"},
+        plugin = {"pretty" , "html:target/cucumber-reports/report.html" , "json:target/report.json"},
         monochrome = true
 )
 
